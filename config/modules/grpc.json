@@ -1,0 +1,10 @@
+{
+    "enable": false,
+    "listen_ip": "",
+    "listen_port": 3730,
+    "use_middleware": true,
+    "use_middleware_tags": true,
+    "use_middleware_route": true,
+    "use_middleware_zap": true,
+    "use_middleware_trace_id": true
+}

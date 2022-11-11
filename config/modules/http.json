@@ -1,0 +1,12 @@
+{
+    "enable": true,
+    "listen_ip": "",
+    "listen_port": 3737,
+    "use_middleware": true,
+    "use_middleware_recovery": true,
+    "use_middleware_ginlogger": true,
+    "use_middleware_zaplogger": false,
+    "use_middleware_route": true,
+    "read_timeout": 10,
+    "write_timeout": 10
+}
