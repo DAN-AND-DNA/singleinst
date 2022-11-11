@@ -1,5 +1,5 @@
 # singleinst
-
+[中文文档](./README_cn.md)
 Some single instance modules
 
 ##  example
