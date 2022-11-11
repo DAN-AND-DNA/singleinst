@@ -2,7 +2,7 @@
 
 some single instance modules
 
-## example
+## usage and example
 
-
+[KVStore](https://github.com/DAN-AND-DNA/singleinst-examples)
  
