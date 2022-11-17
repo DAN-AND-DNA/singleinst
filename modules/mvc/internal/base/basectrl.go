@@ -1,10 +1,9 @@
 package base
 
 import (
-	"context"
 	gingrpc "github.com/dan-and-dna/gin-grpc"
+	"github.com/dan-and-dna/gin-grpc-network/modules/network"
 	"google.golang.org/grpc"
-	"singleinst/modules/network"
 )
 
 type BaseCtrl struct {
@@ -43,8 +42,8 @@ func (baseCtrl *BaseCtrl) StopHandleProto(pkg, service, method string) {
 
 }
 
-func (baseCtrl *BaseCtrl) ListenProto(pkg, service, method string, listener func(context.Context, interface{})) {
-	network.ListenProto(pkg, service, method, listener)
+func (baseCtrl *BaseCtrl) ListenProto(pkg, service, method string, desc *grpc.ServiceDesc, listener func(grpc.ServerStream) error) {
+	network.ListenProto(pkg, service, method, desc, listener)
 }
 
 func (baseCtrl *BaseCtrl) StopListenProto(pkg, service, method string) {
